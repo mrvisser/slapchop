@@ -52,7 +52,13 @@
         "puppet": {
             "system": {
                 "datasetUrn": "sdc:jpc:ubuntu-12.04:2.4.0",
-                "package": "Sakaigerproduction_2GB"
+                "package": "Sakaigerproduction_4GB"
+            }
+        },
+        "monitor": {
+            "system": {
+                "datasetUrn": "sdc:jpc:ubuntu-12.04:2.4.0",
+                "package": "Sakaigerproduction_4GB"
             }
         },
         "syslog": {
@@ -80,13 +86,24 @@
         "cache0": {"type": "cache"},
         "cache1": {"type": "cache"},
         "app0": {"type": "app"},
+        "app1": {"type": "app"},
+        "app2": {"type": "app"},
+        "app3": {"type": "app"},
         "activity0": {"type": "app"},
+        "activity1": {"type": "app"},
+        "activity2": {"type": "app"},
         "pp0": {"type": "pp"},
+        "pp1": {"type": "pp"},
+        "pp2": {"type": "pp"},
         "db0": {"type": "db"},
+        "db1": {"type": "db"},
+        "db2": {"type": "db"},
         "mq0": {"type": "mq"},
         "mq1": {"type": "mq"},
         "search0": {"type": "search"},
+        "search1": {"type": "search"},
         "puppet": {"type": "puppet"},
+        "monitor": {"type": "monitor"},
         "syslog": {"type": "syslog"},
         "web0": {"type": "web"},
         "proxy0": {"type": "proxy"},
