@@ -78,6 +78,12 @@
                 "datasetUrn": "sdc:jpc:ubuntu-12.04:2.4.0",
                 "package": "Sakaigerproduction_512MB"
             }
+        },
+        "bastion": {
+            "system": {
+                "datasetUrn": "sdc:jpc:ubuntu-12.04:2.4.0",
+                "package": "Sakaigerproduction_512MB"
+            }
         }
     },
     "nodes": {
@@ -109,6 +115,7 @@
         "proxy0": {"type": "proxy"},
         "etherpad0": {"type": "etherpad"},
         "etherpad1": {"type": "etherpad"},
-        "etherpad2": {"type": "etherpad"}
+        "etherpad2": {"type": "etherpad"},
+        "bastion": {"type": "bastion"}
     }
 }
