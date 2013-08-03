@@ -1,13 +1,16 @@
 {
     "name": "slapchop",
     "version": "0.0.1",
+    "main": "./index.js",
+    "bin": {
+        "slapchop": "bin/slapchop.js"
+    },
     "dependencies": {
-        "async": "latest",
         "colors": "latest",
+        "extend": "latest",
         "optimist": "latest",
         "prompt": "latest",
         "smartdc": "latest",
-        "ssh2": "latest",
         "underscore": "latest"
     }
 }
