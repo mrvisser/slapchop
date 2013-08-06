@@ -90,6 +90,5 @@ slapchop.context.init(argv.d, filters, function(err, client, environment, templa
         }
 
         slapchop.util.log('slapchop', 'Complete', 'green');
-        return process.exit(0);
     });
 });
