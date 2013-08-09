@@ -31,6 +31,9 @@ var argv = optimist
             .alias('o', 'output')
             .describe('o', 'Directory for result output')
 
+            .alias('u', 'user')
+            .describe('u', 'The user to use for SSH-related commands such as "env"')
+
             .argv;
 
 var commandName = argv._.shift();
@@ -74,7 +77,11 @@ if (argv.x && _.isArray(argv.x)) {
     filters.push('~' + argv.x);
 }
 
-var opts = {'yes': argv.y, 'output': argv.o};
+var opts = {
+    'yes': argv.y,
+    'output': argv.o,
+    'user': argv.u
+};
 
 slapchop.context.init(argv.d, filters, function(err, client, environment, templates, machines) {
     if (err) {
