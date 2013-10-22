@@ -6,6 +6,7 @@
         "slapchop": "bin/slapchop.js"
     },
     "dependencies": {
+        "azure": "latest",
         "colors": "latest",
         "extend": "latest",
         "optimist": "latest",

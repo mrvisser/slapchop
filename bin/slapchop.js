@@ -83,7 +83,7 @@ var opts = {
     'user': argv.u
 };
 
-slapchop.context.init(argv.d, filters, function(err, client, environment, templates, machines) {
+slapchop.context.init(argv.d, filters, function(err, environment, templates, machines) {
     if (err) {
         throw err;
     } else if (_.isEmpty(machines)) {
@@ -91,7 +91,7 @@ slapchop.context.init(argv.d, filters, function(err, client, environment, templa
         process.exit(1);
     }
 
-    command.execute(client, environment, templates, machines, opts, function(err) {
+    command.execute(environment, templates, machines, opts, function(err) {
         if (err) {
             throw err;
         }
