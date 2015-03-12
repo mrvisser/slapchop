@@ -11,6 +11,6 @@
         "optimist": "latest",
         "prompt": "latest",
         "smartdc": "latest",
-        "underscore": "latest"
+        "underscore": "1.5.2"
     }
 }
