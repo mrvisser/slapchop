@@ -10,7 +10,7 @@
         "extend": "latest",
         "optimist": "latest",
         "prompt": "latest",
-        "smartdc": "latest",
+        "aws-sdk": "latest",
         "underscore": "1.5.2"
     }
 }

@@ -48,6 +48,7 @@ if (argv.h) {
 
 process.on('uncaughtException', function(err) {
     slapchop.util.logError('slapchop', 'An uncaught exception was raised to the application', err);
+//    slapchop.util.logError('slapchop', err.message);
     process.exit(1);
 });
 
@@ -85,6 +86,7 @@ var opts = {
 
 slapchop.context.init(argv.d, filters, function(err, client, environment, templates, machines) {
     if (err) {
+//        console.log(err.stack);
         throw err;
     } else if (_.isEmpty(machines)) {
         slapchop.util.logError('slapchop', 'No machines selected, aborting');
